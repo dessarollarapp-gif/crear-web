@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Creo tu página web profesional a medida para tu negocio, tu marca o tu proyecto personal. Precio claro antes de empezar y trato directo.">
+<meta name="keywords" content="páginas web a medida, crear página web, diseño web, página web para negocio, apps web a medida">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dessarollar páginas web · Páginas web a medida">
+<meta property="og:description" content="Tu idea, convertida en una página web que funciona. Te propongo una solución con precio claro antes de empezar.">
+<!-- GOOGLE SEARCH CONSOLE: pega aquí la etiqueta de verificación que te dé Google, por ejemplo:
+<meta name="google-site-verification" content="TU_CODIGO"> -->
+<title>Dessarollar páginas web · Páginas web a medida</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d14;--bg2:#12151f;--card:#151927;--line:#262c40;--tx:#eef0f8;--mu:#9aa1ba;--ac:#7b8cff;--ac2:#b58cff;--on:#0b0d14;--grid:rgba(123,140,255,.09);--glow1:rgba(123,140,255,.28);--glow2:rgba(181,140,255,.2);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f5fb;--bg2:#e9ebf6;--card:#fff;--line:#d9dcee;--tx:#161a2c;--mu:#5a617c;--ac:#4357e8;--ac2:#8a52e0;--on:#fff;--grid:rgba(67,87,232,.08);--glow1:rgba(67,87,232,.18);--glow2:rgba(138,82,224,.14)}}
+:root[data-theme="dark"]{color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+/* Fondo: cuadrícula + dos resplandores fijos */
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+background:radial-gradient(60% 40% at 15% 0%,var(--glow1),transparent 70%),radial-gradient(50% 40% at 100% 55%,var(--glow2),transparent 70%),radial-gradient(60% 40% at 0% 100%,var(--glow1),transparent 70%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:44px 44px;
+-webkit-mask-image:radial-gradient(120% 90% at 50% 30%,#000 30%,transparent 85%);mask-image:radial-gradient(120% 90% at 50% 30%,#000 30%,transparent 85%)}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.brand{font:700 1.05rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+.nav{font-size:.92rem;color:var(--mu);text-decoration:none;padding:8px 14px;border:1px solid var(--line);border-radius:999px}
+.nav:hover,.nav:focus-visible{color:var(--tx);border-color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.hero{padding:72px 0 36px;text-align:center}
+.hero h1{font-size:clamp(2.2rem,8vw,3.6rem);font-weight:800}
+.hero p{color:var(--mu);font-size:1.12rem;max-width:30em;margin:20px auto 30px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer;font-size:1rem;font-family:inherit}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));border-color:transparent;color:var(--on)}
+.btn:hover{transform:translateY(-1px)}
+/* Separador luminoso: rellena el hueco entre botones y pasos */
+.beam{height:90px;position:relative;margin:10px 0}
+.beam::before{content:"";position:absolute;left:8%;right:8%;top:50%;height:1px;background:linear-gradient(90deg,transparent,var(--ac),var(--ac2),transparent)}
+.beam::after{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4px 0 0 -4px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 6px var(--glow1),0 0 28px 8px var(--glow1)}
+section{padding:40px 0}
+.sec h2{font-size:clamp(1.7rem,5.5vw,2.3rem);text-align:center}
+.sub{color:var(--mu);text-align:center;margin:10px 0 32px}
+/* Pasos en línea de tiempo */
+.steps{list-style:none;margin:0;padding:0 0 0 26px;position:relative}
+.steps::before{content:"";position:absolute;left:19px;top:12px;bottom:12px;width:2px;background:linear-gradient(var(--ac),var(--ac2),transparent)}
+.steps li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px 20px 34px;margin-bottom:16px}
+.steps li b{position:absolute;left:-26px;top:20px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 1rem "Bricolage Grotesque",sans-serif;background:linear-gradient(135deg,var(--ac),var(--ac2));color:var(--on);box-shadow:0 0 0 5px var(--bg)}
+.steps h3{font-size:1.2rem;margin-bottom:4px}
+.steps p,.grid p,.why p{margin:0;color:var(--mu)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.grid div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.grid h3{font-size:1.15rem;margin:8px 0 6px}
+.grid span{font-size:1.7rem}
+.grid div:last-child{border-color:var(--ac);background:linear-gradient(160deg,var(--card),var(--bg2))}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.why h3{font-size:1.15rem;margin-bottom:4px}
+.form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+label{display:block;font-weight:600;font-size:.92rem;margin:14px 0 6px}
+input,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:inherit}
+textarea{min-height:120px;resize:vertical}
+.form .btn{margin-top:20px;width:100%}
+.note{text-align:center;color:var(--mu);font-size:.92rem;margin-top:18px}
+footer{text-align:center;color:var(--mu);font-size:.85rem;padding:40px 20px 30px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="#">⚙️ Dessarollar páginas web</a><a class="nav" href="#contacto">Contactar</a></div></header>
+<main class="wrap">
+<div class="hero">
+<h1>Tu idea, convertida en una página web que funciona</h1>
+<p>Cuéntame qué necesitas para tu empresa o para ti. Yo la diseño y la desarrollo a tu medida.</p>
+<div class="btns"><a class="btn p" href="#contacto">Pídeme tu página</a><a class="btn" href="#como">Cómo funciona</a></div>
+</div>
+<div class="beam" aria-hidden="true"></div>
+<section class="sec" id="como">
+<h2>Así de fácil</h2>
+<p class="sub">Sin complicaciones técnicas por tu parte.</p>
+<ol class="steps">
+<li><b>1</b><h3>Escríbeme tu idea</h3><p>Mándame un correo contándome qué necesitas, aunque sea una idea todavía vaga.</p></li>
+<li><b>2</b><h3>Te propongo una solución</h3><p>Te respondo con ideas, alcance y precio claro antes de empezar.</p></li>
+<li><b>3</b><h3>Desarrollo tu página</h3><p>Creo tu página web a medida y te enseño los avances por el camino.</p></li>
+<li><b>4</b><h3>La recibes lista</h3><p>Funciona en móvil y ordenador, sin instalar nada. Solo abrir y usar.</p></li>
+</ol>
+</section>
+<section class="sec">
+<h2>¿Qué puedo crear para ti?</h2>
+<p class="sub">Si lo puedes imaginar, lo podemos construir.</p>
+<div class="grid">
+<div><span>🏢</span><h3>Para tu empresa</h3><p>Página de tu negocio, tienda online, catálogo, reservas, formularios de contacto, blog…</p></div>
+<div><span>🙋</span><h3>Para uso personal</h3><p>Portafolio, currículum online, blog, invitaciones o la página de un evento, a tu gusto.</p></div>
+<div><span>💡</span><h3>Tu idea propia</h3><p>¿No sabes por dónde empezar? Cuéntame el problema y buscamos juntos la mejor página.</p></div>
+<div><span>🌐</span><h3>Apps web</h3><p>Si necesitas algo más que una página, también creo apps a medida: gestión de clientes, paneles, herramientas.</p></div>
+</div>
+</section>
+<section class="sec">
+<h2>Por qué elegir una página web a medida</h2>
+<div class="why" style="margin-top:28px">
+<div><h3>✅ Hecha para ti</h3><p>Hace exactamente lo que necesitas, ni más ni menos.</p></div>
+<div><h3>🤝 Trato directo</h3><p>Hablas conmigo, sin intermediarios ni departamentos.</p></div>
+</div>
+</section>
+<section class="sec" id="contacto">
+<h2>Cuéntame tu idea</h2>
+<p class="sub">Rellena esto y se abrirá tu correo con el mensaje listo para enviar.</p>
+<div class="form">
+<label for="n">Tu nombre</label><input id="n" autocomplete="name">
+<label for="c">Tu correo (para responderte)</label><input id="c" type="email" autocomplete="email">
+<label for="i">Tu idea: ¿qué página necesitas?</label><textarea id="i"></textarea>
+<button class="btn p" id="go" type="button">Enviar por correo</button>
+</div>
+<p class="note">También puedes escribirme directamente a <a href="mailto:dessarollarapp@gmail.com">dessarollarapp@gmail.com</a></p>
+</section>
+</main>
+<footer>© 2026 Dessarollar páginas web · Todos los derechos reservados</footer>
+<script>
+document.getElementById("go").addEventListener("click",function(){
+var v=function(id){return document.getElementById(id).value.trim()};
+var body="Nombre: "+v("n")+"\nCorreo: "+v("c")+"\n\nMi idea:\n"+v("i");
+location.href="mailto:dessarollarapp@gmail.com?subject="+encodeURIComponent("Quiero una página web a medida")+"&body="+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
